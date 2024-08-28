@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "Wneo1LxxKU4=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Myrath\\source\\repos\\Exercicio_forms\\trjfiguras2\\trjfiguras2\\trjfiguras2.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Myrath\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.33\\microsoft.windowsdesktop.app.ref.6.0.33.nupkg.sha512",
+    "C:\\Users\\Myrath\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.33\\microsoft.netcore.app.ref.6.0.33.nupkg.sha512",
+    "C:\\Users\\Myrath\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.33\\microsoft.aspnetcore.app.ref.6.0.33.nupkg.sha512",
+    "C:\\Users\\Myrath\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.33\\microsoft.netcore.app.host.win-x64.6.0.33.nupkg.sha512"
+  ],
+  "logs": []
+}

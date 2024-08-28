@@ -1,0 +1,74 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Myrath\\source\\repos\\Exercicio_forms\\trjfiguras2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B5DFF5FF-7ADE-4389-B430-1AC54AED08C8}|trjfiguras2\\trjfiguras2.csproj|C:\\Users\\Myrath\\source\\repos\\Exercicio_forms\\trjfiguras2\\trjfiguras2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B5DFF5FF-7ADE-4389-B430-1AC54AED08C8}|trjfiguras2\\trjfiguras2.csproj|solutionrelative:trjfiguras2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5DFF5FF-7ADE-4389-B430-1AC54AED08C8}|trjfiguras2\\trjfiguras2.csproj|c:\\users\\myrath\\source\\repos\\exercicio_forms\\trjfiguras2\\trjfiguras2\\figuras.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5DFF5FF-7ADE-4389-B430-1AC54AED08C8}|trjfiguras2\\trjfiguras2.csproj|solutionrelative:trjfiguras2\\figuras.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5DFF5FF-7ADE-4389-B430-1AC54AED08C8}|trjfiguras2\\trjfiguras2.csproj|c:\\users\\myrath\\source\\repos\\exercicio_forms\\trjfiguras2\\trjfiguras2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5DFF5FF-7ADE-4389-B430-1AC54AED08C8}|trjfiguras2\\trjfiguras2.csproj|solutionrelative:trjfiguras2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Myrath\\source\\repos\\Exercicio_forms\\trjfiguras2\\trjfiguras2\\Form1.cs",
+              "RelativeDocumentMoniker": "trjfiguras2\\Form1.cs",
+              "ToolTip": "C:\\Users\\Myrath\\source\\repos\\Exercicio_forms\\trjfiguras2\\trjfiguras2\\Form1.cs",
+              "RelativeToolTip": "trjfiguras2\\Form1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-28T10:45:31.754Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Figuras.cs",
+              "DocumentMoniker": "C:\\Users\\Myrath\\source\\repos\\Exercicio_forms\\trjfiguras2\\trjfiguras2\\Figuras.cs",
+              "RelativeDocumentMoniker": "trjfiguras2\\Figuras.cs",
+              "ToolTip": "C:\\Users\\Myrath\\source\\repos\\Exercicio_forms\\trjfiguras2\\trjfiguras2\\Figuras.cs",
+              "RelativeToolTip": "trjfiguras2\\Figuras.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-28T10:45:32.011Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs [Projeto]",
+              "DocumentMoniker": "C:\\Users\\Myrath\\source\\repos\\Exercicio_forms\\trjfiguras2\\trjfiguras2\\Form1.cs",
+              "RelativeDocumentMoniker": "trjfiguras2\\Form1.cs",
+              "ToolTip": "C:\\Users\\Myrath\\source\\repos\\Exercicio_forms\\trjfiguras2\\trjfiguras2\\Form1.cs [Projeto]",
+              "RelativeToolTip": "trjfiguras2\\Form1.cs [Projeto]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-28T10:45:33.716Z",
+              "EditorCaption": " [Projeto]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

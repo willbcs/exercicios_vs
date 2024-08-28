@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Myrath\\source\\repos\\EXERC\u00CDCIOS\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8D64CBC6-15ED-4645-9E47-20FBC02FF57F}|EXERC\u00CDCIOS\\EXERC\u00CDCIOS.csproj|c:\\users\\myrath\\source\\repos\\exerc\u00EDcios\\exerc\u00EDcios\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D64CBC6-15ED-4645-9E47-20FBC02FF57F}|EXERC\u00CDCIOS\\EXERC\u00CDCIOS.csproj|solutionrelative:exerc\u00EDcios\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Myrath\\source\\repos\\EXERC\u00CDCIOS\\EXERC\u00CDCIOS\\Program.cs",
+              "RelativeDocumentMoniker": "EXERC\u00CDCIOS\\Program.cs",
+              "ToolTip": "C:\\Users\\Myrath\\source\\repos\\EXERC\u00CDCIOS\\EXERC\u00CDCIOS\\Program.cs",
+              "RelativeToolTip": "EXERC\u00CDCIOS\\Program.cs",
+              "ViewState": "AgIAALwBAAAAAAAAAAAowNMBAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T14:28:27.896Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

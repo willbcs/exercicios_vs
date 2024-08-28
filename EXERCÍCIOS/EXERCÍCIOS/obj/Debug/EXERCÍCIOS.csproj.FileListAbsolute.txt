@@ -1,0 +1,7 @@
+C:\Users\Myrath\source\repos\EXERCÍCIOS\EXERCÍCIOS\bin\Debug\EXERCÍCIOS.exe.config
+C:\Users\Myrath\source\repos\EXERCÍCIOS\EXERCÍCIOS\bin\Debug\EXERCÍCIOS.exe
+C:\Users\Myrath\source\repos\EXERCÍCIOS\EXERCÍCIOS\bin\Debug\EXERCÍCIOS.pdb
+C:\Users\Myrath\source\repos\EXERCÍCIOS\EXERCÍCIOS\obj\Debug\EXERCÍCIOS.csproj.AssemblyReference.cache
+C:\Users\Myrath\source\repos\EXERCÍCIOS\EXERCÍCIOS\obj\Debug\EXERCÍCIOS.csproj.CoreCompileInputs.cache
+C:\Users\Myrath\source\repos\EXERCÍCIOS\EXERCÍCIOS\obj\Debug\EXERCÍCIOS.exe
+C:\Users\Myrath\source\repos\EXERCÍCIOS\EXERCÍCIOS\obj\Debug\EXERCÍCIOS.pdb

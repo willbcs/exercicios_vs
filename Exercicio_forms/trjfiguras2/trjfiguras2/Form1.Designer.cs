@@ -28,143 +28,262 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lbRetangulo = new System.Windows.Forms.Label();
-            this.lbQuadrado = new System.Windows.Forms.Label();
-            this.lbCirculo = new System.Windows.Forms.Label();
-            this.txladoA = new System.Windows.Forms.TextBox();
-            this.txladoB = new System.Windows.Forms.TextBox();
-            this.txLado = new System.Windows.Forms.TextBox();
-            this.txRaio = new System.Windows.Forms.TextBox();
-            this.btOkQuadrado = new System.Windows.Forms.Button();
-            this.btOkRetangulo = new System.Windows.Forms.Button();
-            this.btOkCirculo = new System.Windows.Forms.Button();
-            this.lbResultado = new System.Windows.Forms.Label();
-            this.SuspendLayout();
+            lbRetangulo = new Label();
+            lbQuadrado = new Label();
+            lbCirculo = new Label();
+            txladoA = new TextBox();
+            txladoB = new TextBox();
+            txLado = new TextBox();
+            txRaio = new TextBox();
+            btOkQuadrado = new Button();
+            btOkRetangulo = new Button();
+            btOkCirculo = new Button();
+            lbResultado = new Label();
+            lbLadoA = new Label();
+            lbLadoB = new Label();
+            lbLado = new Label();
+            lbRaio = new Label();
+            lbAltura = new Label();
+            lbBase = new Label();
+            btOkTrianguloRet = new Button();
+            txAltura = new TextBox();
+            txBase = new TextBox();
+            lbTrianguloRet = new Label();
+            SuspendLayout();
             // 
             // lbRetangulo
             // 
-            this.lbRetangulo.AutoSize = true;
-            this.lbRetangulo.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbRetangulo.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lbRetangulo.Location = new System.Drawing.Point(83, 46);
-            this.lbRetangulo.Name = "lbRetangulo";
-            this.lbRetangulo.Size = new System.Drawing.Size(104, 25);
-            this.lbRetangulo.TabIndex = 1;
-            this.lbRetangulo.Text = "Retângulo";
+            lbRetangulo.AutoSize = true;
+            lbRetangulo.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            lbRetangulo.ForeColor = SystemColors.ControlLightLight;
+            lbRetangulo.Location = new Point(41, 24);
+            lbRetangulo.Name = "lbRetangulo";
+            lbRetangulo.Size = new Size(104, 25);
+            lbRetangulo.TabIndex = 1;
+            lbRetangulo.Text = "Retângulo";
             // 
             // lbQuadrado
             // 
-            this.lbQuadrado.AutoSize = true;
-            this.lbQuadrado.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbQuadrado.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lbQuadrado.Location = new System.Drawing.Point(342, 46);
-            this.lbQuadrado.Name = "lbQuadrado";
-            this.lbQuadrado.Size = new System.Drawing.Size(102, 25);
-            this.lbQuadrado.TabIndex = 2;
-            this.lbQuadrado.Text = "Quadrado";
+            lbQuadrado.AutoSize = true;
+            lbQuadrado.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            lbQuadrado.ForeColor = SystemColors.ControlLightLight;
+            lbQuadrado.Location = new Point(216, 24);
+            lbQuadrado.Name = "lbQuadrado";
+            lbQuadrado.Size = new Size(102, 25);
+            lbQuadrado.TabIndex = 2;
+            lbQuadrado.Text = "Quadrado";
             // 
             // lbCirculo
             // 
-            this.lbCirculo.AutoSize = true;
-            this.lbCirculo.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbCirculo.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lbCirculo.Location = new System.Drawing.Point(636, 46);
-            this.lbCirculo.Name = "lbCirculo";
-            this.lbCirculo.Size = new System.Drawing.Size(75, 25);
-            this.lbCirculo.TabIndex = 3;
-            this.lbCirculo.Text = "Círculo";
+            lbCirculo.AutoSize = true;
+            lbCirculo.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            lbCirculo.ForeColor = SystemColors.ControlLightLight;
+            lbCirculo.Location = new Point(405, 24);
+            lbCirculo.Name = "lbCirculo";
+            lbCirculo.Size = new Size(75, 25);
+            lbCirculo.TabIndex = 3;
+            lbCirculo.Text = "Círculo";
             // 
             // txladoA
             // 
-            this.txladoA.Location = new System.Drawing.Point(83, 101);
-            this.txladoA.Name = "txladoA";
-            this.txladoA.Size = new System.Drawing.Size(100, 23);
-            this.txladoA.TabIndex = 4;
+            txladoA.Location = new Point(41, 102);
+            txladoA.Name = "txladoA";
+            txladoA.Size = new Size(100, 23);
+            txladoA.TabIndex = 4;
             // 
             // txladoB
             // 
-            this.txladoB.Location = new System.Drawing.Point(83, 168);
-            this.txladoB.Name = "txladoB";
-            this.txladoB.Size = new System.Drawing.Size(100, 23);
-            this.txladoB.TabIndex = 5;
+            txladoB.Location = new Point(41, 169);
+            txladoB.Name = "txladoB";
+            txladoB.Size = new Size(100, 23);
+            txladoB.TabIndex = 5;
             // 
             // txLado
             // 
-            this.txLado.Location = new System.Drawing.Point(342, 101);
-            this.txLado.Name = "txLado";
-            this.txLado.Size = new System.Drawing.Size(100, 23);
-            this.txLado.TabIndex = 6;
+            txLado.Location = new Point(216, 102);
+            txLado.Name = "txLado";
+            txLado.Size = new Size(100, 23);
+            txLado.TabIndex = 6;
             // 
             // txRaio
             // 
-            this.txRaio.Location = new System.Drawing.Point(623, 101);
-            this.txRaio.Name = "txRaio";
-            this.txRaio.Size = new System.Drawing.Size(100, 23);
-            this.txRaio.TabIndex = 7;
+            txRaio.Location = new Point(392, 102);
+            txRaio.Name = "txRaio";
+            txRaio.Size = new Size(100, 23);
+            txRaio.TabIndex = 7;
             // 
             // btOkQuadrado
             // 
-            this.btOkQuadrado.Location = new System.Drawing.Point(352, 237);
-            this.btOkQuadrado.Name = "btOkQuadrado";
-            this.btOkQuadrado.Size = new System.Drawing.Size(75, 23);
-            this.btOkQuadrado.TabIndex = 8;
-            this.btOkQuadrado.Text = "OK";
-            this.btOkQuadrado.UseVisualStyleBackColor = true;
-            this.btOkQuadrado.Click += new System.EventHandler(this.btOkQuadrado_Click);
+            btOkQuadrado.Location = new Point(229, 238);
+            btOkQuadrado.Name = "btOkQuadrado";
+            btOkQuadrado.Size = new Size(75, 23);
+            btOkQuadrado.TabIndex = 8;
+            btOkQuadrado.Text = "OK";
+            btOkQuadrado.UseVisualStyleBackColor = true;
+            btOkQuadrado.Click += btOkQuadrado_Click;
             // 
             // btOkRetangulo
             // 
-            this.btOkRetangulo.Location = new System.Drawing.Point(95, 237);
-            this.btOkRetangulo.Name = "btOkRetangulo";
-            this.btOkRetangulo.Size = new System.Drawing.Size(75, 23);
-            this.btOkRetangulo.TabIndex = 9;
-            this.btOkRetangulo.Text = "OK";
-            this.btOkRetangulo.UseVisualStyleBackColor = true;
-            this.btOkRetangulo.Click += new System.EventHandler(this.btOkRetangulo_Click);
+            btOkRetangulo.Location = new Point(53, 238);
+            btOkRetangulo.Name = "btOkRetangulo";
+            btOkRetangulo.Size = new Size(75, 23);
+            btOkRetangulo.TabIndex = 9;
+            btOkRetangulo.Text = "OK";
+            btOkRetangulo.UseVisualStyleBackColor = true;
+            btOkRetangulo.Click += btOkRetangulo_Click;
             // 
             // btOkCirculo
             // 
-            this.btOkCirculo.Location = new System.Drawing.Point(636, 237);
-            this.btOkCirculo.Name = "btOkCirculo";
-            this.btOkCirculo.Size = new System.Drawing.Size(75, 23);
-            this.btOkCirculo.TabIndex = 10;
-            this.btOkCirculo.Text = "OK";
-            this.btOkCirculo.UseVisualStyleBackColor = true;
-            this.btOkCirculo.Click += new System.EventHandler(this.btOkCirculo_Click);
+            btOkCirculo.Location = new Point(405, 238);
+            btOkCirculo.Name = "btOkCirculo";
+            btOkCirculo.Size = new Size(75, 23);
+            btOkCirculo.TabIndex = 10;
+            btOkCirculo.Text = "OK";
+            btOkCirculo.UseVisualStyleBackColor = true;
+            btOkCirculo.Click += btOkCirculo_Click;
             // 
             // lbResultado
             // 
-            this.lbResultado.AutoSize = true;
-            this.lbResultado.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbResultado.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lbResultado.Location = new System.Drawing.Point(83, 369);
-            this.lbResultado.Name = "lbResultado";
-            this.lbResultado.Size = new System.Drawing.Size(17, 25);
-            this.lbResultado.TabIndex = 11;
-            this.lbResultado.Text = ".";
+            lbResultado.AutoSize = true;
+            lbResultado.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            lbResultado.ForeColor = SystemColors.ControlLightLight;
+            lbResultado.Location = new Point(83, 369);
+            lbResultado.Name = "lbResultado";
+            lbResultado.Size = new Size(0, 25);
+            lbResultado.TabIndex = 11;
+            // 
+            // lbLadoA
+            // 
+            lbLadoA.AutoSize = true;
+            lbLadoA.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
+            lbLadoA.ForeColor = SystemColors.ControlLightLight;
+            lbLadoA.Location = new Point(41, 80);
+            lbLadoA.Name = "lbLadoA";
+            lbLadoA.Size = new Size(60, 19);
+            lbLadoA.TabIndex = 12;
+            lbLadoA.Text = "Lado A:";
+            // 
+            // lbLadoB
+            // 
+            lbLadoB.AutoSize = true;
+            lbLadoB.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
+            lbLadoB.ForeColor = SystemColors.ControlLightLight;
+            lbLadoB.Location = new Point(41, 147);
+            lbLadoB.Name = "lbLadoB";
+            lbLadoB.Size = new Size(59, 19);
+            lbLadoB.TabIndex = 13;
+            lbLadoB.Text = "Lado B:";
+            // 
+            // lbLado
+            // 
+            lbLado.AutoSize = true;
+            lbLado.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
+            lbLado.ForeColor = SystemColors.ControlLightLight;
+            lbLado.Location = new Point(216, 80);
+            lbLado.Name = "lbLado";
+            lbLado.Size = new Size(46, 19);
+            lbLado.TabIndex = 14;
+            lbLado.Text = "Lado:";
+            // 
+            // lbRaio
+            // 
+            lbRaio.AutoSize = true;
+            lbRaio.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
+            lbRaio.ForeColor = SystemColors.ControlLightLight;
+            lbRaio.Location = new Point(392, 80);
+            lbRaio.Name = "lbRaio";
+            lbRaio.Size = new Size(43, 19);
+            lbRaio.TabIndex = 15;
+            lbRaio.Text = "Raio:";
+            // 
+            // lbAltura
+            // 
+            lbAltura.AutoSize = true;
+            lbAltura.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
+            lbAltura.ForeColor = SystemColors.ControlLightLight;
+            lbAltura.Location = new Point(573, 147);
+            lbAltura.Name = "lbAltura";
+            lbAltura.Size = new Size(54, 19);
+            lbAltura.TabIndex = 21;
+            lbAltura.Text = "Altura:";
+            // 
+            // lbBase
+            // 
+            lbBase.AutoSize = true;
+            lbBase.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
+            lbBase.ForeColor = SystemColors.ControlLightLight;
+            lbBase.Location = new Point(573, 80);
+            lbBase.Name = "lbBase";
+            lbBase.Size = new Size(44, 19);
+            lbBase.TabIndex = 20;
+            lbBase.Text = "Base:";
+            // 
+            // btOkTrianguloRet
+            // 
+            btOkTrianguloRet.Location = new Point(585, 238);
+            btOkTrianguloRet.Name = "btOkTrianguloRet";
+            btOkTrianguloRet.Size = new Size(75, 23);
+            btOkTrianguloRet.TabIndex = 19;
+            btOkTrianguloRet.Text = "OK";
+            btOkTrianguloRet.UseVisualStyleBackColor = true;
+            btOkTrianguloRet.Click += btOkTrianguloRet_Click;
+            // 
+            // txAltura
+            // 
+            txAltura.Location = new Point(573, 169);
+            txAltura.Name = "txAltura";
+            txAltura.Size = new Size(100, 23);
+            txAltura.TabIndex = 18;
+            // 
+            // txBase
+            // 
+            txBase.Location = new Point(573, 102);
+            txBase.Name = "txBase";
+            txBase.Size = new Size(100, 23);
+            txBase.TabIndex = 17;
+            // 
+            // lbTrianguloRet
+            // 
+            lbTrianguloRet.AutoSize = true;
+            lbTrianguloRet.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            lbTrianguloRet.ForeColor = SystemColors.ControlLightLight;
+            lbTrianguloRet.Location = new Point(541, 24);
+            lbTrianguloRet.Name = "lbTrianguloRet";
+            lbTrianguloRet.Size = new Size(195, 25);
+            lbTrianguloRet.TabIndex = 16;
+            lbTrianguloRet.Text = "Triângulo Retângulo";
             // 
             // frmfiguras2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Maroon;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.lbResultado);
-            this.Controls.Add(this.btOkCirculo);
-            this.Controls.Add(this.btOkRetangulo);
-            this.Controls.Add(this.btOkQuadrado);
-            this.Controls.Add(this.txRaio);
-            this.Controls.Add(this.txLado);
-            this.Controls.Add(this.txladoB);
-            this.Controls.Add(this.txladoA);
-            this.Controls.Add(this.lbCirculo);
-            this.Controls.Add(this.lbQuadrado);
-            this.Controls.Add(this.lbRetangulo);
-            this.Name = "frmfiguras2";
-            this.Text = "Trabalhando Com figuras Planas";
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.Maroon;
+            ClientSize = new Size(800, 450);
+            Controls.Add(lbAltura);
+            Controls.Add(lbBase);
+            Controls.Add(btOkTrianguloRet);
+            Controls.Add(txAltura);
+            Controls.Add(txBase);
+            Controls.Add(lbTrianguloRet);
+            Controls.Add(lbRaio);
+            Controls.Add(lbLado);
+            Controls.Add(lbLadoB);
+            Controls.Add(lbLadoA);
+            Controls.Add(lbResultado);
+            Controls.Add(btOkCirculo);
+            Controls.Add(btOkRetangulo);
+            Controls.Add(btOkQuadrado);
+            Controls.Add(txRaio);
+            Controls.Add(txLado);
+            Controls.Add(txladoB);
+            Controls.Add(txladoA);
+            Controls.Add(lbCirculo);
+            Controls.Add(lbQuadrado);
+            Controls.Add(lbRetangulo);
+            Name = "frmfiguras2";
+            Text = "Trabalhando Com figuras Planas";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -180,5 +299,15 @@
         private Button btOkRetangulo;
         private Button btOkCirculo;
         private Label lbResultado;
+        private Label lbLadoA;
+        private Label lbLadoB;
+        private Label lbLado;
+        private Label lbRaio;
+        private Label lbAltura;
+        private Label lbBase;
+        private Button btOkTrianguloRet;
+        private TextBox txAltura;
+        private TextBox txBase;
+        private Label lbTrianguloRet;
     }
 }

@@ -11,9 +11,9 @@ namespace trjfiguras2
         {
             float raio;
 
-            if(!float.TryParse(txRaio.Text, out raio) || raio <= 0)
+            if (!float.TryParse(txRaio.Text, out raio) || raio <= 0)
             {
-                MessageBox.Show("Raio Inválido", "Erro crítico", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Digite um valor válido para o raio!", "Erro crítico", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
@@ -54,6 +54,25 @@ namespace trjfiguras2
 
             Retangulo r = new Retangulo(ladoA, ladoB);
             lbResultado.Text = $"Área: {r.area}, Perímetro: {r.perimetro}";
+        }
+
+        private void btOkTrianguloRet_Click(object sender, EventArgs e)
+        {
+            float tribase, trialtura;
+            if (!float.TryParse(txBase.Text, out tribase) || tribase <= 0)
+            {
+                MessageBox.Show("Digite um valor válido para a base!", "Erro Crítico", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+
+            }
+            if (!float.TryParse(txAltura.Text, out trialtura) || trialtura <= 0)
+            {
+                MessageBox.Show("Digite um valor válido para a altura!", "Erro Crítico!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+
+            }
+            TrianguloRet t = new TrianguloRet(tribase, trialtura);
+            lbResultado.Text = $"Área {t.area}, Perímetro: {t.perimetro}";
         }
     }
 }

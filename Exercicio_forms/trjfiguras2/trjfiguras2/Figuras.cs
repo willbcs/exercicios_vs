@@ -53,4 +53,16 @@ namespace trjfiguras2
 
         }
     }
+    public class TrianguloRet : Figuras
+    {
+        public float basetri { get; private set; }
+        public float alturatri { get; private set; }
+        public float hipotenusa { get; private set; }
+        public TrianguloRet(float basetri, float alturatri ) : base((basetri * alturatri)/2, basetri + alturatri + (float)Math.Sqrt(basetri * basetri + alturatri * alturatri))
+        {
+            this.basetri = basetri;
+            this.alturatri = alturatri;
+            this.hipotenusa = (float)Math.Sqrt(basetri * basetri + alturatri * alturatri);
+        }
+    }
 }

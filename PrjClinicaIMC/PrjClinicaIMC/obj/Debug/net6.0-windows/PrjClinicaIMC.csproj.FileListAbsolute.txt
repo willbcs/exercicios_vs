@@ -1,0 +1,34 @@
+D:\2º Semestre\PROGRAMAÇÃO ORIENTADA A OBJETOS    HELIO AUGUSTO DE LIMA RANGEL\PrjClinicaIMC\PrjClinicaIMC\bin\Debug\net6.0-windows\PrjClinicaIMC.exe
+D:\2º Semestre\PROGRAMAÇÃO ORIENTADA A OBJETOS    HELIO AUGUSTO DE LIMA RANGEL\PrjClinicaIMC\PrjClinicaIMC\bin\Debug\net6.0-windows\PrjClinicaIMC.deps.json
+D:\2º Semestre\PROGRAMAÇÃO ORIENTADA A OBJETOS    HELIO AUGUSTO DE LIMA RANGEL\PrjClinicaIMC\PrjClinicaIMC\bin\Debug\net6.0-windows\PrjClinicaIMC.runtimeconfig.json
+D:\2º Semestre\PROGRAMAÇÃO ORIENTADA A OBJETOS    HELIO AUGUSTO DE LIMA RANGEL\PrjClinicaIMC\PrjClinicaIMC\bin\Debug\net6.0-windows\PrjClinicaIMC.dll
+D:\2º Semestre\PROGRAMAÇÃO ORIENTADA A OBJETOS    HELIO AUGUSTO DE LIMA RANGEL\PrjClinicaIMC\PrjClinicaIMC\bin\Debug\net6.0-windows\ref\PrjClinicaIMC.dll
+D:\2º Semestre\PROGRAMAÇÃO ORIENTADA A OBJETOS    HELIO AUGUSTO DE LIMA RANGEL\PrjClinicaIMC\PrjClinicaIMC\bin\Debug\net6.0-windows\PrjClinicaIMC.pdb
+D:\2º Semestre\PROGRAMAÇÃO ORIENTADA A OBJETOS    HELIO AUGUSTO DE LIMA RANGEL\PrjClinicaIMC\PrjClinicaIMC\obj\Debug\net6.0-windows\PrjClinicaIMC.csproj.AssemblyReference.cache
+D:\2º Semestre\PROGRAMAÇÃO ORIENTADA A OBJETOS    HELIO AUGUSTO DE LIMA RANGEL\PrjClinicaIMC\PrjClinicaIMC\obj\Debug\net6.0-windows\PrjClinicaIMC.frnClinicaImc.resources
+D:\2º Semestre\PROGRAMAÇÃO ORIENTADA A OBJETOS    HELIO AUGUSTO DE LIMA RANGEL\PrjClinicaIMC\PrjClinicaIMC\obj\Debug\net6.0-windows\PrjClinicaIMC.csproj.GenerateResource.cache
+D:\2º Semestre\PROGRAMAÇÃO ORIENTADA A OBJETOS    HELIO AUGUSTO DE LIMA RANGEL\PrjClinicaIMC\PrjClinicaIMC\obj\Debug\net6.0-windows\PrjClinicaIMC.GeneratedMSBuildEditorConfig.editorconfig
+D:\2º Semestre\PROGRAMAÇÃO ORIENTADA A OBJETOS    HELIO AUGUSTO DE LIMA RANGEL\PrjClinicaIMC\PrjClinicaIMC\obj\Debug\net6.0-windows\PrjClinicaIMC.AssemblyInfoInputs.cache
+D:\2º Semestre\PROGRAMAÇÃO ORIENTADA A OBJETOS    HELIO AUGUSTO DE LIMA RANGEL\PrjClinicaIMC\PrjClinicaIMC\obj\Debug\net6.0-windows\PrjClinicaIMC.AssemblyInfo.cs
+D:\2º Semestre\PROGRAMAÇÃO ORIENTADA A OBJETOS    HELIO AUGUSTO DE LIMA RANGEL\PrjClinicaIMC\PrjClinicaIMC\obj\Debug\net6.0-windows\PrjClinicaIMC.csproj.CoreCompileInputs.cache
+D:\2º Semestre\PROGRAMAÇÃO ORIENTADA A OBJETOS    HELIO AUGUSTO DE LIMA RANGEL\PrjClinicaIMC\PrjClinicaIMC\obj\Debug\net6.0-windows\PrjClinicaIMC.dll
+D:\2º Semestre\PROGRAMAÇÃO ORIENTADA A OBJETOS    HELIO AUGUSTO DE LIMA RANGEL\PrjClinicaIMC\PrjClinicaIMC\obj\Debug\net6.0-windows\ref\PrjClinicaIMC.dll
+D:\2º Semestre\PROGRAMAÇÃO ORIENTADA A OBJETOS    HELIO AUGUSTO DE LIMA RANGEL\PrjClinicaIMC\PrjClinicaIMC\obj\Debug\net6.0-windows\PrjClinicaIMC.pdb
+D:\2º Semestre\PROGRAMAÇÃO ORIENTADA A OBJETOS    HELIO AUGUSTO DE LIMA RANGEL\PrjClinicaIMC\PrjClinicaIMC\obj\Debug\net6.0-windows\PrjClinicaIMC.genruntimeconfig.cache
+D:\CSharp\PrjClinicaIMC\PrjClinicaIMC\bin\Debug\net6.0-windows\PrjClinicaIMC.exe
+D:\CSharp\PrjClinicaIMC\PrjClinicaIMC\bin\Debug\net6.0-windows\PrjClinicaIMC.deps.json
+D:\CSharp\PrjClinicaIMC\PrjClinicaIMC\bin\Debug\net6.0-windows\PrjClinicaIMC.runtimeconfig.json
+D:\CSharp\PrjClinicaIMC\PrjClinicaIMC\bin\Debug\net6.0-windows\PrjClinicaIMC.dll
+D:\CSharp\PrjClinicaIMC\PrjClinicaIMC\bin\Debug\net6.0-windows\ref\PrjClinicaIMC.dll
+D:\CSharp\PrjClinicaIMC\PrjClinicaIMC\bin\Debug\net6.0-windows\PrjClinicaIMC.pdb
+D:\CSharp\PrjClinicaIMC\PrjClinicaIMC\obj\Debug\net6.0-windows\PrjClinicaIMC.csproj.AssemblyReference.cache
+D:\CSharp\PrjClinicaIMC\PrjClinicaIMC\obj\Debug\net6.0-windows\PrjClinicaIMC.frnClinicaImc.resources
+D:\CSharp\PrjClinicaIMC\PrjClinicaIMC\obj\Debug\net6.0-windows\PrjClinicaIMC.csproj.GenerateResource.cache
+D:\CSharp\PrjClinicaIMC\PrjClinicaIMC\obj\Debug\net6.0-windows\PrjClinicaIMC.GeneratedMSBuildEditorConfig.editorconfig
+D:\CSharp\PrjClinicaIMC\PrjClinicaIMC\obj\Debug\net6.0-windows\PrjClinicaIMC.AssemblyInfoInputs.cache
+D:\CSharp\PrjClinicaIMC\PrjClinicaIMC\obj\Debug\net6.0-windows\PrjClinicaIMC.AssemblyInfo.cs
+D:\CSharp\PrjClinicaIMC\PrjClinicaIMC\obj\Debug\net6.0-windows\PrjClinicaIMC.csproj.CoreCompileInputs.cache
+D:\CSharp\PrjClinicaIMC\PrjClinicaIMC\obj\Debug\net6.0-windows\PrjClinicaIMC.dll
+D:\CSharp\PrjClinicaIMC\PrjClinicaIMC\obj\Debug\net6.0-windows\ref\PrjClinicaIMC.dll
+D:\CSharp\PrjClinicaIMC\PrjClinicaIMC\obj\Debug\net6.0-windows\PrjClinicaIMC.pdb
+D:\CSharp\PrjClinicaIMC\PrjClinicaIMC\obj\Debug\net6.0-windows\PrjClinicaIMC.genruntimeconfig.cache

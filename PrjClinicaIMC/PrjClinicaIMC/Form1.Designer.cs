@@ -28,268 +28,286 @@
         /// </summary>
         private void InitializeComponent()
         {
-            lbTitulo = new Label();
-            lbMensagem = new Label();
-            lbMatricula = new Label();
-            txMatricula = new TextBox();
-            txNome = new TextBox();
-            lbNome = new Label();
-            txDataNacimento = new TextBox();
-            lbDataNacimento = new Label();
-            txCPF = new TextBox();
-            lbCPF = new Label();
-            rbFem = new RadioButton();
-            rbMasc = new RadioButton();
-            rbOutros = new RadioButton();
-            txPeso = new TextBox();
-            lbPeso = new Label();
-            txAltura = new TextBox();
-            lbAltura = new Label();
-            btOk = new Button();
-            txEmail = new TextBox();
-            lbEmail = new Label();
-            txRelatorio = new TextBox();
-            SuspendLayout();
+            this.lbTitulo = new System.Windows.Forms.Label();
+            this.lbMensagem = new System.Windows.Forms.Label();
+            this.lbMatricula = new System.Windows.Forms.Label();
+            this.txMatricula = new System.Windows.Forms.TextBox();
+            this.txNome = new System.Windows.Forms.TextBox();
+            this.lbNome = new System.Windows.Forms.Label();
+            this.txDataNacimento = new System.Windows.Forms.TextBox();
+            this.lbDataNacimento = new System.Windows.Forms.Label();
+            this.txCPF = new System.Windows.Forms.TextBox();
+            this.lbCPF = new System.Windows.Forms.Label();
+            this.rbFem = new System.Windows.Forms.RadioButton();
+            this.rbMasc = new System.Windows.Forms.RadioButton();
+            this.rbOutros = new System.Windows.Forms.RadioButton();
+            this.txPeso = new System.Windows.Forms.TextBox();
+            this.lbPeso = new System.Windows.Forms.Label();
+            this.txAltura = new System.Windows.Forms.TextBox();
+            this.lbAltura = new System.Windows.Forms.Label();
+            this.btOk = new System.Windows.Forms.Button();
+            this.txEmail = new System.Windows.Forms.TextBox();
+            this.lbEmail = new System.Windows.Forms.Label();
+            this.txRelatorio = new System.Windows.Forms.TextBox();
+            this.btLimpar = new System.Windows.Forms.Button();
+            this.SuspendLayout();
             // 
             // lbTitulo
             // 
-            lbTitulo.AutoSize = true;
-            lbTitulo.Font = new Font("Corbel", 16F, FontStyle.Bold, GraphicsUnit.Point);
-            lbTitulo.Location = new Point(240, 9);
-            lbTitulo.Name = "lbTitulo";
-            lbTitulo.Size = new Size(311, 27);
-            lbTitulo.TabIndex = 0;
-            lbTitulo.Text = "CLÍNICA DE EMAGRECIMENTO";
+            this.lbTitulo.AutoSize = true;
+            this.lbTitulo.BackColor = System.Drawing.Color.Transparent;
+            this.lbTitulo.Font = new System.Drawing.Font("Corbel", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbTitulo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lbTitulo.Location = new System.Drawing.Point(240, 9);
+            this.lbTitulo.Name = "lbTitulo";
+            this.lbTitulo.Size = new System.Drawing.Size(311, 27);
+            this.lbTitulo.TabIndex = 0;
+            this.lbTitulo.Text = "CLÍNICA DE EMAGRECIMENTO";
             // 
             // lbMensagem
             // 
-            lbMensagem.AutoSize = true;
-            lbMensagem.Font = new Font("Corbel", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            lbMensagem.ForeColor = Color.FromArgb(192, 0, 0);
-            lbMensagem.Location = new Point(22, 415);
-            lbMensagem.Name = "lbMensagem";
-            lbMensagem.Size = new Size(0, 26);
-            lbMensagem.TabIndex = 1;
+            this.lbMensagem.AutoSize = true;
+            this.lbMensagem.Font = new System.Drawing.Font("Corbel", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbMensagem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lbMensagem.Location = new System.Drawing.Point(22, 415);
+            this.lbMensagem.Name = "lbMensagem";
+            this.lbMensagem.Size = new System.Drawing.Size(0, 26);
+            this.lbMensagem.TabIndex = 1;
             // 
             // lbMatricula
             // 
-            lbMatricula.AutoSize = true;
-            lbMatricula.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
-            lbMatricula.ForeColor = Color.FromArgb(192, 0, 0);
-            lbMatricula.Location = new Point(22, 54);
-            lbMatricula.Name = "lbMatricula";
-            lbMatricula.Size = new Size(75, 20);
-            lbMatricula.TabIndex = 2;
-            lbMatricula.Text = "Matricula";
+            this.lbMatricula.AutoSize = true;
+            this.lbMatricula.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbMatricula.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lbMatricula.Location = new System.Drawing.Point(22, 54);
+            this.lbMatricula.Name = "lbMatricula";
+            this.lbMatricula.Size = new System.Drawing.Size(75, 20);
+            this.lbMatricula.TabIndex = 2;
+            this.lbMatricula.Text = "Matrícula";
             // 
             // txMatricula
             // 
-            txMatricula.Location = new Point(22, 77);
-            txMatricula.Name = "txMatricula";
-            txMatricula.Size = new Size(100, 23);
-            txMatricula.TabIndex = 3;
+            this.txMatricula.Location = new System.Drawing.Point(22, 77);
+            this.txMatricula.Name = "txMatricula";
+            this.txMatricula.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+            this.txMatricula.Size = new System.Drawing.Size(100, 23);
+            this.txMatricula.TabIndex = 3;
             // 
             // txNome
             // 
-            txNome.Location = new Point(22, 126);
-            txNome.Name = "txNome";
-            txNome.Size = new Size(249, 23);
-            txNome.TabIndex = 5;
+            this.txNome.Location = new System.Drawing.Point(22, 126);
+            this.txNome.Name = "txNome";
+            this.txNome.Size = new System.Drawing.Size(249, 23);
+            this.txNome.TabIndex = 5;
             // 
             // lbNome
             // 
-            lbNome.AutoSize = true;
-            lbNome.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
-            lbNome.ForeColor = Color.FromArgb(192, 0, 0);
-            lbNome.Location = new Point(22, 103);
-            lbNome.Name = "lbNome";
-            lbNome.Size = new Size(52, 20);
-            lbNome.TabIndex = 4;
-            lbNome.Text = "Nome";
+            this.lbNome.AutoSize = true;
+            this.lbNome.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbNome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lbNome.Location = new System.Drawing.Point(22, 103);
+            this.lbNome.Name = "lbNome";
+            this.lbNome.Size = new System.Drawing.Size(52, 20);
+            this.lbNome.TabIndex = 4;
+            this.lbNome.Text = "Nome";
             // 
             // txDataNacimento
             // 
-            txDataNacimento.Location = new Point(22, 175);
-            txDataNacimento.Name = "txDataNacimento";
-            txDataNacimento.Size = new Size(100, 23);
-            txDataNacimento.TabIndex = 7;
+            this.txDataNacimento.Location = new System.Drawing.Point(22, 175);
+            this.txDataNacimento.Name = "txDataNacimento";
+            this.txDataNacimento.Size = new System.Drawing.Size(100, 23);
+            this.txDataNacimento.TabIndex = 7;
             // 
             // lbDataNacimento
             // 
-            lbDataNacimento.AutoSize = true;
-            lbDataNacimento.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
-            lbDataNacimento.ForeColor = Color.FromArgb(192, 0, 0);
-            lbDataNacimento.Location = new Point(22, 152);
-            lbDataNacimento.Name = "lbDataNacimento";
-            lbDataNacimento.Size = new Size(141, 20);
-            lbDataNacimento.TabIndex = 6;
-            lbDataNacimento.Text = "Data de nacimento";
+            this.lbDataNacimento.AutoSize = true;
+            this.lbDataNacimento.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbDataNacimento.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lbDataNacimento.Location = new System.Drawing.Point(22, 152);
+            this.lbDataNacimento.Name = "lbDataNacimento";
+            this.lbDataNacimento.Size = new System.Drawing.Size(148, 20);
+            this.lbDataNacimento.TabIndex = 6;
+            this.lbDataNacimento.Text = "Data de nascimento";
+            this.lbDataNacimento.Click += new System.EventHandler(this.lbDataNacimento_Click);
             // 
             // txCPF
             // 
-            txCPF.Location = new Point(22, 226);
-            txCPF.Name = "txCPF";
-            txCPF.Size = new Size(100, 23);
-            txCPF.TabIndex = 9;
-            txCPF.TextChanged += textBox1_TextChanged;
+            this.txCPF.Location = new System.Drawing.Point(22, 226);
+            this.txCPF.Name = "txCPF";
+            this.txCPF.Size = new System.Drawing.Size(100, 23);
+            this.txCPF.TabIndex = 9;
+            this.txCPF.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // lbCPF
             // 
-            lbCPF.AutoSize = true;
-            lbCPF.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
-            lbCPF.ForeColor = Color.FromArgb(192, 0, 0);
-            lbCPF.Location = new Point(22, 203);
-            lbCPF.Name = "lbCPF";
-            lbCPF.Size = new Size(35, 20);
-            lbCPF.TabIndex = 8;
-            lbCPF.Text = "CPF";
-            lbCPF.Click += label1_Click;
+            this.lbCPF.AutoSize = true;
+            this.lbCPF.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbCPF.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lbCPF.Location = new System.Drawing.Point(22, 203);
+            this.lbCPF.Name = "lbCPF";
+            this.lbCPF.Size = new System.Drawing.Size(35, 20);
+            this.lbCPF.TabIndex = 8;
+            this.lbCPF.Text = "CPF";
+            this.lbCPF.Click += new System.EventHandler(this.label1_Click);
             // 
             // rbFem
             // 
-            rbFem.AutoSize = true;
-            rbFem.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            rbFem.ForeColor = Color.FromArgb(192, 0, 0);
-            rbFem.Location = new Point(22, 304);
-            rbFem.Name = "rbFem";
-            rbFem.Size = new Size(100, 25);
-            rbFem.TabIndex = 11;
-            rbFem.TabStop = true;
-            rbFem.Text = "Feminino";
-            rbFem.UseVisualStyleBackColor = true;
+            this.rbFem.AutoSize = true;
+            this.rbFem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.rbFem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.rbFem.Location = new System.Drawing.Point(22, 304);
+            this.rbFem.Name = "rbFem";
+            this.rbFem.Size = new System.Drawing.Size(100, 25);
+            this.rbFem.TabIndex = 11;
+            this.rbFem.TabStop = true;
+            this.rbFem.Text = "Feminino";
+            this.rbFem.UseVisualStyleBackColor = true;
             // 
             // rbMasc
             // 
-            rbMasc.AutoSize = true;
-            rbMasc.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            rbMasc.ForeColor = Color.FromArgb(192, 0, 0);
-            rbMasc.Location = new Point(22, 335);
-            rbMasc.Name = "rbMasc";
-            rbMasc.Size = new Size(107, 25);
-            rbMasc.TabIndex = 12;
-            rbMasc.TabStop = true;
-            rbMasc.Text = "Masculino";
-            rbMasc.UseVisualStyleBackColor = true;
+            this.rbMasc.AutoSize = true;
+            this.rbMasc.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.rbMasc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.rbMasc.Location = new System.Drawing.Point(22, 335);
+            this.rbMasc.Name = "rbMasc";
+            this.rbMasc.Size = new System.Drawing.Size(107, 25);
+            this.rbMasc.TabIndex = 12;
+            this.rbMasc.TabStop = true;
+            this.rbMasc.Text = "Masculino";
+            this.rbMasc.UseVisualStyleBackColor = true;
             // 
             // rbOutros
             // 
-            rbOutros.AutoSize = true;
-            rbOutros.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            rbOutros.ForeColor = Color.FromArgb(192, 0, 0);
-            rbOutros.Location = new Point(22, 366);
-            rbOutros.Name = "rbOutros";
-            rbOutros.Size = new Size(79, 25);
-            rbOutros.TabIndex = 13;
-            rbOutros.TabStop = true;
-            rbOutros.Text = "Outros";
-            rbOutros.UseVisualStyleBackColor = true;
+            this.rbOutros.AutoSize = true;
+            this.rbOutros.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.rbOutros.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.rbOutros.Location = new System.Drawing.Point(22, 366);
+            this.rbOutros.Name = "rbOutros";
+            this.rbOutros.Size = new System.Drawing.Size(79, 25);
+            this.rbOutros.TabIndex = 13;
+            this.rbOutros.TabStop = true;
+            this.rbOutros.Text = "Outros";
+            this.rbOutros.UseVisualStyleBackColor = true;
             // 
             // txPeso
             // 
-            txPeso.Location = new Point(171, 175);
-            txPeso.Name = "txPeso";
-            txPeso.Size = new Size(100, 23);
-            txPeso.TabIndex = 15;
+            this.txPeso.Location = new System.Drawing.Point(171, 175);
+            this.txPeso.Name = "txPeso";
+            this.txPeso.Size = new System.Drawing.Size(100, 23);
+            this.txPeso.TabIndex = 15;
             // 
             // lbPeso
             // 
-            lbPeso.AutoSize = true;
-            lbPeso.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
-            lbPeso.ForeColor = Color.FromArgb(192, 0, 0);
-            lbPeso.Location = new Point(171, 152);
-            lbPeso.Name = "lbPeso";
-            lbPeso.Size = new Size(42, 20);
-            lbPeso.TabIndex = 14;
-            lbPeso.Text = "Peso";
+            this.lbPeso.AutoSize = true;
+            this.lbPeso.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbPeso.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lbPeso.Location = new System.Drawing.Point(171, 152);
+            this.lbPeso.Name = "lbPeso";
+            this.lbPeso.Size = new System.Drawing.Size(42, 20);
+            this.lbPeso.TabIndex = 14;
+            this.lbPeso.Text = "Peso";
             // 
             // txAltura
             // 
-            txAltura.Location = new Point(171, 226);
-            txAltura.Name = "txAltura";
-            txAltura.Size = new Size(100, 23);
-            txAltura.TabIndex = 17;
+            this.txAltura.Location = new System.Drawing.Point(171, 226);
+            this.txAltura.Name = "txAltura";
+            this.txAltura.Size = new System.Drawing.Size(100, 23);
+            this.txAltura.TabIndex = 17;
             // 
             // lbAltura
             // 
-            lbAltura.AutoSize = true;
-            lbAltura.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
-            lbAltura.ForeColor = Color.FromArgb(192, 0, 0);
-            lbAltura.Location = new Point(171, 203);
-            lbAltura.Name = "lbAltura";
-            lbAltura.Size = new Size(53, 20);
-            lbAltura.TabIndex = 16;
-            lbAltura.Text = "Altura";
+            this.lbAltura.AutoSize = true;
+            this.lbAltura.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbAltura.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lbAltura.Location = new System.Drawing.Point(171, 203);
+            this.lbAltura.Name = "lbAltura";
+            this.lbAltura.Size = new System.Drawing.Size(53, 20);
+            this.lbAltura.TabIndex = 16;
+            this.lbAltura.Text = "Altura";
             // 
             // btOk
             // 
-            btOk.ForeColor = Color.Black;
-            btOk.Location = new Point(196, 307);
-            btOk.Name = "btOk";
-            btOk.Size = new Size(75, 23);
-            btOk.TabIndex = 18;
-            btOk.Text = "OK";
-            btOk.UseVisualStyleBackColor = true;
-            btOk.Click += btOk_Click;
+            this.btOk.ForeColor = System.Drawing.Color.Black;
+            this.btOk.Location = new System.Drawing.Point(196, 366);
+            this.btOk.Name = "btOk";
+            this.btOk.Size = new System.Drawing.Size(75, 23);
+            this.btOk.TabIndex = 18;
+            this.btOk.Text = "OK";
+            this.btOk.UseVisualStyleBackColor = true;
+            this.btOk.Click += new System.EventHandler(this.btOk_Click);
             // 
             // txEmail
             // 
-            txEmail.Location = new Point(22, 275);
-            txEmail.Name = "txEmail";
-            txEmail.Size = new Size(249, 23);
-            txEmail.TabIndex = 20;
+            this.txEmail.Location = new System.Drawing.Point(22, 275);
+            this.txEmail.Name = "txEmail";
+            this.txEmail.Size = new System.Drawing.Size(249, 23);
+            this.txEmail.TabIndex = 20;
             // 
             // lbEmail
             // 
-            lbEmail.AutoSize = true;
-            lbEmail.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
-            lbEmail.ForeColor = Color.FromArgb(192, 0, 0);
-            lbEmail.Location = new Point(22, 252);
-            lbEmail.Name = "lbEmail";
-            lbEmail.Size = new Size(53, 20);
-            lbEmail.TabIndex = 19;
-            lbEmail.Text = "E-mail";
+            this.lbEmail.AutoSize = true;
+            this.lbEmail.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lbEmail.Location = new System.Drawing.Point(22, 252);
+            this.lbEmail.Name = "lbEmail";
+            this.lbEmail.Size = new System.Drawing.Size(53, 20);
+            this.lbEmail.TabIndex = 19;
+            this.lbEmail.Text = "E-mail";
             // 
             // txRelatorio
             // 
-            txRelatorio.Location = new Point(303, 73);
-            txRelatorio.Multiline = true;
-            txRelatorio.Name = "txRelatorio";
-            txRelatorio.ScrollBars = ScrollBars.Vertical;
-            txRelatorio.Size = new Size(459, 342);
-            txRelatorio.TabIndex = 21;
+            this.txRelatorio.Location = new System.Drawing.Point(319, 73);
+            this.txRelatorio.Multiline = true;
+            this.txRelatorio.Name = "txRelatorio";
+            this.txRelatorio.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+            this.txRelatorio.Size = new System.Drawing.Size(443, 342);
+            this.txRelatorio.TabIndex = 21;
+            this.txRelatorio.WordWrap = false;
+            // 
+            // btLimpar
+            // 
+            this.btLimpar.Location = new System.Drawing.Point(196, 307);
+            this.btLimpar.Name = "btLimpar";
+            this.btLimpar.Size = new System.Drawing.Size(75, 23);
+            this.btLimpar.TabIndex = 22;
+            this.btLimpar.Text = "Limpar";
+            this.btLimpar.UseVisualStyleBackColor = true;
+            this.btLimpar.Click += new System.EventHandler(this.btLimpar_Click);
             // 
             // frnClinicaImc
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.ActiveCaption;
-            ClientSize = new Size(800, 450);
-            Controls.Add(txRelatorio);
-            Controls.Add(txEmail);
-            Controls.Add(lbEmail);
-            Controls.Add(btOk);
-            Controls.Add(txAltura);
-            Controls.Add(lbAltura);
-            Controls.Add(txPeso);
-            Controls.Add(lbPeso);
-            Controls.Add(rbOutros);
-            Controls.Add(rbMasc);
-            Controls.Add(rbFem);
-            Controls.Add(txCPF);
-            Controls.Add(lbCPF);
-            Controls.Add(txDataNacimento);
-            Controls.Add(lbDataNacimento);
-            Controls.Add(txNome);
-            Controls.Add(lbNome);
-            Controls.Add(txMatricula);
-            Controls.Add(lbMatricula);
-            Controls.Add(lbMensagem);
-            Controls.Add(lbTitulo);
-            Name = "frnClinicaImc";
-            Text = "Clinica de emagrecimento";
-            Load += frnClinicaImc_Load;
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btLimpar);
+            this.Controls.Add(this.txRelatorio);
+            this.Controls.Add(this.txEmail);
+            this.Controls.Add(this.lbEmail);
+            this.Controls.Add(this.btOk);
+            this.Controls.Add(this.txAltura);
+            this.Controls.Add(this.lbAltura);
+            this.Controls.Add(this.txPeso);
+            this.Controls.Add(this.lbPeso);
+            this.Controls.Add(this.rbOutros);
+            this.Controls.Add(this.rbMasc);
+            this.Controls.Add(this.rbFem);
+            this.Controls.Add(this.txCPF);
+            this.Controls.Add(this.lbCPF);
+            this.Controls.Add(this.txDataNacimento);
+            this.Controls.Add(this.lbDataNacimento);
+            this.Controls.Add(this.txNome);
+            this.Controls.Add(this.lbNome);
+            this.Controls.Add(this.txMatricula);
+            this.Controls.Add(this.lbMatricula);
+            this.Controls.Add(this.lbMensagem);
+            this.Controls.Add(this.lbTitulo);
+            this.Name = "frnClinicaImc";
+            this.Text = "Clinica de emagrecimento";
+            this.Load += new System.EventHandler(this.frnClinicaImc_Load);
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
@@ -315,5 +333,6 @@
         private TextBox txEmail;
         private Label lbEmail;
         private TextBox txRelatorio;
+        private Button btLimpar;
     }
 }

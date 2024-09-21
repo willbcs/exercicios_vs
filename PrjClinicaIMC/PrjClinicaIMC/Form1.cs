@@ -8,6 +8,8 @@ namespace PrjClinicaIMC
         public frnClinicaImc()
         {
             InitializeComponent();
+            txMatricula.MaxLength = 6;
+            txCPF.MaxLength = 11;
             lbMensagem.Text = string.Empty;
         }
 
@@ -26,50 +28,84 @@ namespace PrjClinicaIMC
 
         }
 
+        private void mostraPciente(Paciente p)
+        {
+            txMatricula.Text = p.matricula;
+            txAltura.Text = p.altura().ToString();
+            txCPF.Text = p.cpf;
+            txDataNacimento.Text = p.dataDeNascimento.ToString("dd/MM/yyyy");
+            txEmail.Text = p.email;
+            txNome.Text = p.nome;
+            txPeso.Text = p.peso().ToString();
+            rbFem.Checked = p.sexo == 'F';
+            rbMasc.Checked = p.sexo == 'M';
+            rbOutros.Checked = p.sexo == 'O';
+
+        }
+
+        private static bool editando = false;
+
         private void btOk_Click(object sender, EventArgs e)
         {
             if(txMatricula.Text.Trim().Length != 6)
             {
-                lbMensagem.Text = "A Matrícula deve ter 6 digitos!";
+                MessageBox.Show("A Matrícula deve ter 6 digitos!", "Erro Crítico", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
+            }
+
+            if (!editando)
+            {
+
+                foreach (Paciente pc in listaPacientes)
+                {
+                    if (txMatricula.Text.Trim() == pc.matricula)
+                    {
+                        mostraPciente(pc);
+                        txMatricula.ReadOnly = true;
+                        editando = true;
+                        return;
+                    }
+
+                }
+
             }
             if(txNome.Text.Trim()==String.Empty)
             {
-                lbMensagem.Text = "É obrigatório digitar o nome do paciente";
+                MessageBox.Show("É obrigatório digitar o nome do paciente", "Erro Crítico", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return ;
             }
             if(txCPF.Text.Trim().Length != 11)
             {
-                lbMensagem.Text = "O CPF digitado é invalido";
+                MessageBox.Show("O CPF digitado é invalido", "Erro Crítico", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-            DateTime dataNacimennto;
-            DateTime dataHoje = DateTime.Today;
-            DateTime dateTime = DateTime.Now;
-            DateTime dataMinima = dataHoje.AddDays(-16);
-            if (!DateTime.TryParse(txDataNacimento.Text, out dataNacimennto))
+            DateTime dataNascimento;
+            if (!DateTime.TryParse(txDataNacimento.Text, out dataNascimento))
             {
-                lbMensagem.Text = "data de nacimento é invalida";
+                MessageBox.Show("Digite uma data de nascimento válida", "Erro Crítico", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-            else
+
+            int idade = DateTime.Now.Year - dataNascimento.Year;
+            if (dataNascimento > DateTime.Now.AddYears(-idade)) idade--; // Ajuste se a data de aniversário ainda não ocorreu este ano
+
+            // Verificação de idade mínima
+            if (idade < 16)
             {
-                if(dataNacimennto > dataMinima)
-                {
-                    lbMensagem.Text = "É necessário ter mais de 16 anos";
-                }
+                MessageBox.Show("Pacientes menores de 16 anos não podem ser validados!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
             }
 
             float peso,altura;
             if(!float.TryParse(txPeso.Text,out peso) || peso < 40 || peso > 180)
             {
-                lbMensagem.Text = " Peso do paciente é invalido";
+                MessageBox.Show("Peso do paciente é invalido", "Erro Crítico", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
             if(!float.TryParse(txAltura.Text, out altura) || altura < 1.2 || altura > 2.2)
             {
-                lbMensagem.Text = " Altura do paciente é invalido";
+                MessageBox.Show("Altura do paciente é invalido", "Erro Crítico", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
@@ -78,16 +114,37 @@ namespace PrjClinicaIMC
             if (rbMasc.Checked) sexo = 'M';
             if(!rbFem.Checked&& rbMasc.Checked&&rbOutros.Checked)
             {
-                lbMensagem.Text = "Selecione o sexo!";
+                MessageBox.Show("Selecione o sexo!", "Erro Crítico", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
-            Paciente p = new Paciente(txNome.Text, dataNacimennto, txCPF.Text, sexo, peso, altura, txMatricula.Text);
+            Paciente p = new Paciente(txNome.Text, dataNascimento, txCPF.Text, sexo, peso, altura, txMatricula.Text);
             //lbMensagem.Text = " Paciente " + p.nome + "tem o IMC: " + p.valorImc();
             p.email = txEmail.Text;
-            limpatela();
-                        
-            listaPacientes.Add(p);
+            if (editando)
+            {
+                for (int i = 0; i < listaPacientes.Count; i++)
+                {
+                    if (txMatricula.Text == listaPacientes[i].matricula)
+                    {
+
+                        listaPacientes[i] = p;
+                        txMatricula.ReadOnly = false;
+                        editando = false;
+                        break;
+
+                    }
+                }
+            }
+
+            else
+            {
+                //aqui estamos inserindo(não é novo)
+                listaPacientes.Add(p);
+               
+            }
+
+            limpatela();                        
             txRelatorio.Text = relatorio();
         }   
 
@@ -115,6 +172,20 @@ namespace PrjClinicaIMC
             rbFem.Checked =
             rbMasc.Checked =
             rbOutros.Checked = false;
+
+        }
+
+        private void btLimpar_Click(object sender, EventArgs e)
+        {
+
+            limpatela();
+            txMatricula.ReadOnly = false;
+            editando = false;
+
+        }
+
+        private void lbDataNacimento_Click(object sender, EventArgs e)
+        {
 
         }
     }

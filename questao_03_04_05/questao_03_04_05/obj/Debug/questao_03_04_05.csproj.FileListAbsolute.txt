@@ -1,0 +1,7 @@
+C:\Users\Myrath\source\repos\questao_03_04_05\questao_03_04_05\bin\Debug\questao_03_04_05.exe.config
+C:\Users\Myrath\source\repos\questao_03_04_05\questao_03_04_05\bin\Debug\questao_03_04_05.exe
+C:\Users\Myrath\source\repos\questao_03_04_05\questao_03_04_05\bin\Debug\questao_03_04_05.pdb
+C:\Users\Myrath\source\repos\questao_03_04_05\questao_03_04_05\obj\Debug\questao_03_04_05.csproj.AssemblyReference.cache
+C:\Users\Myrath\source\repos\questao_03_04_05\questao_03_04_05\obj\Debug\questao_03_04_05.csproj.CoreCompileInputs.cache
+C:\Users\Myrath\source\repos\questao_03_04_05\questao_03_04_05\obj\Debug\questao_03_04_05.exe
+C:\Users\Myrath\source\repos\questao_03_04_05\questao_03_04_05\obj\Debug\questao_03_04_05.pdb

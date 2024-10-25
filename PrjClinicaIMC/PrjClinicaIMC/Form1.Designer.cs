@@ -50,6 +50,11 @@
             this.lbEmail = new System.Windows.Forms.Label();
             this.txRelatorio = new System.Windows.Forms.TextBox();
             this.btLimpar = new System.Windows.Forms.Button();
+            this.btExcluir = new System.Windows.Forms.Button();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.mnClinica = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnVoltar = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // lbTitulo
@@ -58,7 +63,7 @@
             this.lbTitulo.BackColor = System.Drawing.Color.Transparent;
             this.lbTitulo.Font = new System.Drawing.Font("Corbel", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lbTitulo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lbTitulo.Location = new System.Drawing.Point(240, 9);
+            this.lbTitulo.Location = new System.Drawing.Point(231, 24);
             this.lbTitulo.Name = "lbTitulo";
             this.lbTitulo.Size = new System.Drawing.Size(311, 27);
             this.lbTitulo.TabIndex = 0;
@@ -162,6 +167,7 @@
             this.rbFem.TabStop = true;
             this.rbFem.Text = "Feminino";
             this.rbFem.UseVisualStyleBackColor = true;
+            this.rbFem.CheckedChanged += new System.EventHandler(this.rbFem_CheckedChanged);
             // 
             // rbMasc
             // 
@@ -175,6 +181,7 @@
             this.rbMasc.TabStop = true;
             this.rbMasc.Text = "Masculino";
             this.rbMasc.UseVisualStyleBackColor = true;
+            this.rbMasc.CheckedChanged += new System.EventHandler(this.rbMasc_CheckedChanged);
             // 
             // rbOutros
             // 
@@ -188,6 +195,7 @@
             this.rbOutros.TabStop = true;
             this.rbOutros.Text = "Outros";
             this.rbOutros.UseVisualStyleBackColor = true;
+            this.rbOutros.CheckedChanged += new System.EventHandler(this.rbOutros_CheckedChanged);
             // 
             // txPeso
             // 
@@ -274,12 +282,49 @@
             this.btLimpar.UseVisualStyleBackColor = true;
             this.btLimpar.Click += new System.EventHandler(this.btLimpar_Click);
             // 
+            // btExcluir
+            // 
+            this.btExcluir.Location = new System.Drawing.Point(196, 338);
+            this.btExcluir.Name = "btExcluir";
+            this.btExcluir.Size = new System.Drawing.Size(75, 23);
+            this.btExcluir.TabIndex = 23;
+            this.btExcluir.Text = "Excluir";
+            this.btExcluir.UseVisualStyleBackColor = true;
+            this.btExcluir.Click += new System.EventHandler(this.btExcluir_Click);
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mnVoltar,
+            this.mnClinica});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
+            this.menuStrip1.TabIndex = 40;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // mnClinica
+            // 
+            this.mnClinica.Name = "mnClinica";
+            this.mnClinica.Size = new System.Drawing.Size(59, 20);
+            this.mnClinica.Text = "Usuário";
+            this.mnClinica.Click += new System.EventHandler(this.mnClinica_Click);
+            // 
+            // mnVoltar
+            // 
+            this.mnVoltar.Name = "mnVoltar";
+            this.mnVoltar.Size = new System.Drawing.Size(49, 20);
+            this.mnVoltar.Text = "Voltar";
+            this.mnVoltar.Click += new System.EventHandler(this.mnVoltar_Click);
+            // 
             // frnClinicaImc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.menuStrip1);
+            this.Controls.Add(this.btExcluir);
             this.Controls.Add(this.btLimpar);
             this.Controls.Add(this.txRelatorio);
             this.Controls.Add(this.txEmail);
@@ -305,6 +350,8 @@
             this.Name = "frnClinicaImc";
             this.Text = "Clinica de emagrecimento";
             this.Load += new System.EventHandler(this.frnClinicaImc_Load);
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -334,5 +381,9 @@
         private Label lbEmail;
         private TextBox txRelatorio;
         private Button btLimpar;
+        private Button btExcluir;
+        private MenuStrip menuStrip1;
+        private ToolStripMenuItem mnVoltar;
+        private ToolStripMenuItem mnClinica;
     }
 }

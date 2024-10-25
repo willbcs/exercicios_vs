@@ -9,36 +9,102 @@ namespace PrjClinicaIMC
     //internal class ClassesIMC
     //{
     //}
-    public class Usuario : Pessoa_fisica
+    public interface IExemplo
     {
-        private string senha;
+
+        public string meuNome();
+
+    }
+
+    [Serializable]
+
+    public class Usuario : Pessoa_fisica, IExemplo, IComparable<Usuario>
+    {
+        public long hashsenha { get; private set; }
         public string login { get; private set; }
         public char perfil { get; private set; }
 
+        public Usuario(String login) : base("", DateTime.Now, "", '?')
+        {
+            this.login = login;
+            this.perfil = '?';
+        }
 
         public Usuario(
             String nome,
             DateTime dataDeNascimento,
             String cpf,
             char sexo,
-            float altura,
-            float peso, string matricula,
             string senha,
             string login,
             char perfil) : base(nome, dataDeNascimento, cpf, sexo)
         {
             this.login = login;
             this.perfil = perfil;
-            this.senha = senha;
+            this.hashsenha = Utilitarios.myHash(senha,"");
 
         }
+        public string meuNome()
+        {
+            return "Usuário";
+        }
+
+
+        public int CompareTo(Usuario ?u)
+        {
+            if (u == null) return 1;
+            return login.CompareTo(u.login);
+        }
+
+        public override String ToString()
+        {
+            StringBuilder sb = new StringBuilder();
+
+            sb.Append(nome + ",");
+            sb.Append(login + ",");
+            sb.Append(dataDeNascimento.ToString("dd/MM/yyyy") + ",");
+            sb.Append(Utilitarios.formataCpf(cpf) + ",");
+            sb.Append(sexo + ",");
+            sb.Append(perfil + ",");
+            sb.Append(email);
+
+
+            return sb.ToString();
+        }
+
 
     }
-    public class Paciente : Pessoa_fisica //paciente e ( : ) subclasse da pessoa fisica
+
+    [Serializable]
+
+    public class Paciente : Pessoa_fisica, IExemplo, IComparable<Paciente> //paciente e ( : ) subclasse da pessoa fisica
     {
         private IMC imc;
 
+        public int CompareTo(Paciente? x)
+        {
+            if (x == null)
+            {
+                return -1;
+            }
+
+            return matricula.CompareTo(x.matricula);
+        }
+
         public String matricula { get; private set; }
+
+        public string meuNome()
+        {
+            return "Paciente";
+        }
+
+        public Paciente(string matricula) : base("", new DateTime(), "", '0')
+        {
+            this.matricula = matricula;
+            this.email = "";
+            imc = new IMC(0, 0);
+        }
+
         public Paciente(String nome,
             DateTime dataDeNascimento,
             String cpf,
@@ -68,6 +134,9 @@ namespace PrjClinicaIMC
         }
 
     }
+
+    [Serializable]
+
     public class IMC : Object
     {
         public float peso { get; private set; }
@@ -114,6 +183,9 @@ namespace PrjClinicaIMC
         }
 
     }
+
+    [Serializable]
+
     public abstract class Pessoa_fisica
     {
         public String nome { get; private set; }

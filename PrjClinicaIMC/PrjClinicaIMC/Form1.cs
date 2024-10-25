@@ -112,7 +112,7 @@ namespace PrjClinicaIMC
             char sexo = 'O';
             if (rbFem.Checked) sexo = 'F';
             if (rbMasc.Checked) sexo = 'M';
-            if(!rbFem.Checked&& rbMasc.Checked&&rbOutros.Checked)
+            if(!rbFem.Checked && !rbMasc.Checked && !rbOutros.Checked)
             {
                 MessageBox.Show("Selecione o sexo!", "Erro Crítico", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
@@ -152,14 +152,17 @@ namespace PrjClinicaIMC
         {
             StringBuilder ret = new StringBuilder();
 
-            foreach(Paciente p in listaPacientes)
+            listaPacientes.Sort();
+
+
+            foreach (Paciente p in listaPacientes)
             {
                 ret.AppendLine(p.ToString());
             }
             return ret.ToString();
         }
        
-        private void limpatela()
+        public void limpatela()
         {
 
             txAltura.Text =
@@ -187,6 +190,56 @@ namespace PrjClinicaIMC
         private void lbDataNacimento_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btExcluir_Click(object sender, EventArgs e)
+        {
+            Paciente fajuto = new Paciente(txMatricula.Text);
+            listaPacientes.Sort();
+            int pos = listaPacientes.BinarySearch(fajuto);
+            if (pos < 0)
+            {
+                MessageBox.Show("Marícula inexistente!", "Erro Crítico", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            listaPacientes.RemoveAt(pos);
+
+            limpatela();
+
+            txRelatorio.Text = relatorio();
+
+            lbMensagem.Text = "Pacinte excluido com sucesso!";
+
+        }
+
+        private void rbMasc_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rbFem_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rbOutros_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void mnClinica_Click(object sender, EventArgs e)
+        {
+            Visible = false;
+            Form form = new CadUser();
+            form.Visible = true;
+        }
+
+        private void mnVoltar_Click(object sender, EventArgs e)
+        {
+            Visible = false;
+            Form form = new Login();
+            form.Visible = true;
         }
     }
 }

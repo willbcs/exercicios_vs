@@ -1,0 +1,5 @@
+[2025-03-21 20:04:50] Cliente alterou 'sala' para 'desligar'
+[2025-03-21 20:05:00] Cliente alterou 'quarto' para 'ligar'
+[2025-03-21 20:09:52] Cliente alterou 'sala' para 'ligar'
+[2025-03-21 20:28:31] Cliente alterou 'sala' para 'ligar'
+[2025-03-21 20:28:43] Cliente alterou 'quarto' para 'ligar'

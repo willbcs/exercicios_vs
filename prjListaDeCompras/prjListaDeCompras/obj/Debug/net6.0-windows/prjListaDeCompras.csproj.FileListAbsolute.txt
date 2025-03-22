@@ -1,0 +1,17 @@
+D:\CSharp\prjListaDeCompras\prjListaDeCompras\bin\Debug\net6.0-windows\prjListaDeCompras.exe
+D:\CSharp\prjListaDeCompras\prjListaDeCompras\bin\Debug\net6.0-windows\prjListaDeCompras.deps.json
+D:\CSharp\prjListaDeCompras\prjListaDeCompras\bin\Debug\net6.0-windows\prjListaDeCompras.runtimeconfig.json
+D:\CSharp\prjListaDeCompras\prjListaDeCompras\bin\Debug\net6.0-windows\prjListaDeCompras.dll
+D:\CSharp\prjListaDeCompras\prjListaDeCompras\bin\Debug\net6.0-windows\ref\prjListaDeCompras.dll
+D:\CSharp\prjListaDeCompras\prjListaDeCompras\bin\Debug\net6.0-windows\prjListaDeCompras.pdb
+D:\CSharp\prjListaDeCompras\prjListaDeCompras\obj\Debug\net6.0-windows\prjListaDeCompras.csproj.AssemblyReference.cache
+D:\CSharp\prjListaDeCompras\prjListaDeCompras\obj\Debug\net6.0-windows\prjListaDeCompras.Form1.resources
+D:\CSharp\prjListaDeCompras\prjListaDeCompras\obj\Debug\net6.0-windows\prjListaDeCompras.csproj.GenerateResource.cache
+D:\CSharp\prjListaDeCompras\prjListaDeCompras\obj\Debug\net6.0-windows\prjListaDeCompras.GeneratedMSBuildEditorConfig.editorconfig
+D:\CSharp\prjListaDeCompras\prjListaDeCompras\obj\Debug\net6.0-windows\prjListaDeCompras.AssemblyInfoInputs.cache
+D:\CSharp\prjListaDeCompras\prjListaDeCompras\obj\Debug\net6.0-windows\prjListaDeCompras.AssemblyInfo.cs
+D:\CSharp\prjListaDeCompras\prjListaDeCompras\obj\Debug\net6.0-windows\prjListaDeCompras.csproj.CoreCompileInputs.cache
+D:\CSharp\prjListaDeCompras\prjListaDeCompras\obj\Debug\net6.0-windows\prjListaDeCompras.dll
+D:\CSharp\prjListaDeCompras\prjListaDeCompras\obj\Debug\net6.0-windows\ref\prjListaDeCompras.dll
+D:\CSharp\prjListaDeCompras\prjListaDeCompras\obj\Debug\net6.0-windows\prjListaDeCompras.pdb
+D:\CSharp\prjListaDeCompras\prjListaDeCompras\obj\Debug\net6.0-windows\prjListaDeCompras.genruntimeconfig.cache

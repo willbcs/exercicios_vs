@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "a57c7e7c-f1ac-4f1d-81cb-6ede39bf68d6": {
+      "ProjectGuid": "a57c7e7c-f1ac-4f1d-81cb-6ede39bf68d6",
+      "DisplayName": "ClienteIluminacao",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}

@@ -22,12 +22,12 @@ namespace EXERCÍCIOS
             //EX_03();
             //EX_04();
             //EX_05();
-            //EX_06();
+            EX_06();
             //IMC();
             //Pagamento();
             //Converter();
             //Med_Mai();
-            ArraysP_I();
+            //ArraysP_I();
             Console.ReadKey();
         }
 
@@ -71,7 +71,7 @@ namespace EXERCÍCIOS
         static void EX_02()
         {
             string Sidade;
-            int idade; int contador = 0, adultos = 0;  
+            int idade; int contador = 0, adultos = 0;
             int Soma = 0;
             int[] idades = new int[15];
 
@@ -127,7 +127,7 @@ namespace EXERCÍCIOS
 
                 numeros[cont] = num;
 
-                
+
                 if (num - maior > 0)
                 {
                     maior = num;
@@ -141,11 +141,11 @@ namespace EXERCÍCIOS
 
         static void EX_04()
         {
-            int [] ACC = new int[15];
+            int[] ACC = new int[15];
             int[] MCC = new int[15];
             int num, contA = 0, contB = 0, Soma = 0, i = 0;
             string Snum;
-            
+
             while (i < 15)
             {
                 do
@@ -153,7 +153,7 @@ namespace EXERCÍCIOS
                     Console.WriteLine("Digite apenas um número inteiro de 1 a 200: ");
                     Snum = Console.ReadLine();
 
-                }while (!int.TryParse(Snum, out num) || num < 1 || num > 200);
+                } while (!int.TryParse(Snum, out num) || num < 1 || num > 200);
 
                 if (num > 100)
                 {
@@ -188,6 +188,126 @@ namespace EXERCÍCIOS
             Console.WriteLine($"A média dos valores apresentados é {media}");
         }
 
+        static void EX_05()
+        {
+
+            float num1, num2, resultado = 0;
+            string operador;
+
+            while (true)
+            {
+                Console.WriteLine("Digite o primeiro número: ");
+                String n1 = Console.ReadLine();
+
+                if (!float.TryParse(n1, out num1))
+                {
+                    Console.WriteLine("Isso não é um número!");
+                }
+                else
+                {
+                    break;
+                }
+
+            }
+            while (true)
+            {
+                Console.WriteLine("Digite o primeiro número: ");
+                String n2 = Console.ReadLine();
+
+                if (!float.TryParse(n2, out num2))
+                {
+                    Console.WriteLine("Isso não é um número!");
+                }
+                else
+                {
+                    break;
+                }
+
+            }
+
+            while (true)
+            {
+                Console.WriteLine("Escolha entre os operadores '+; -; *; /'");
+                operador = Console.ReadLine();
+                if (operador == "+" || operador == "-" || operador == "*" || operador == "/")
+                {
+                    break;
+                }
+                else
+                {
+                    Console.WriteLine("Isso não é um operador válido!");
+                }
+            }
+
+            switch (operador)
+            {
+                case "+":
+                    resultado = num1 + num2;
+                    break;
+
+                case "-":
+                    resultado = num1 - num2;
+                    break;
+
+                case "*":
+                    resultado = num1 * num2;
+                    break;
+
+                case "/":
+                    if (num2 != 0)
+                    {
+                        resultado = num1 / num2;
+
+                    }
+                    else
+                    {
+                        Console.WriteLine("Divisão por 0 não é permitida!");
+                        return;
+                    }
+                    break;
+
+            }
+            Console.WriteLine($"O resultado de {num1} {operador} {num2} = {resultado} ");
+
+        }
+
+        static void EX_06()
+        {
+            int num1;       
+
+            while (true)
+            {
+                Console.WriteLine("Digite um número positivo: ");
+                String n1 = Console.ReadLine();
+
+                if (!int.TryParse(n1, out num1))
+                {                       
+                    Console.WriteLine("Isso não é um número positivo!");
+                }
+                else
+                {
+                    if (num1 < 0) 
+                    {
+                        Console.WriteLine("Isso não é um número positivo!");
+
+                    }
+                    else 
+                    {
+                        break;
+                    }
+                }
+
+            }
+            Console.WriteLine();
+            while (num1 > 0) 
+            {
+                Console.WriteLine(num1);
+                num1 = num1 - 1;
+                            
+            }
+            Console.WriteLine("Fim da contagem!");
+        }
+
         static float Peso(string mensagem)
         {
             while (true)
@@ -201,7 +321,7 @@ namespace EXERCÍCIOS
                     {
                         return peso;
                     }
-                    else 
+                    else
                     {
                         Console.WriteLine("Não existe peso menor ou igual a 0!");
                     }
@@ -209,11 +329,11 @@ namespace EXERCÍCIOS
                 else
                 {
                     Console.WriteLine("Caracteres inválidos foram digitados!");
-                }                                    
+                }
             }
         }
 
-        static float Altura (string mensagem_2)
+        static float Altura(string mensagem_2)
         {
             while (true)
             {
@@ -229,7 +349,7 @@ namespace EXERCÍCIOS
                     else
                     {
                         Console.WriteLine("Não existe altura com valor menor ou igual a 0!");
-                    }                 
+                    }
                 }
                 else
                 {
@@ -243,7 +363,7 @@ namespace EXERCÍCIOS
         {
             float massa = Peso("Digite seu peso: ");
             float medida = Altura("Digite sua altura: ");
-            
+
             return massa / (medida * medida);
         }
 
@@ -293,7 +413,7 @@ namespace EXERCÍCIOS
                         Console.WriteLine("O valor digitado precisa ser maior que zero!");
                     }
                 }
-                catch(FormatException)
+                catch (FormatException)
                 {
                     Console.Clear();
                     Console.WriteLine("Caracteres inválidos foram digitados!");
@@ -349,20 +469,20 @@ namespace EXERCÍCIOS
                 {
                     float total_1 = preco - (preco * 0.15f);
                     Console.WriteLine($"À vista e em dinheiro, o valor total é de R${total_1} \n\n\n");
-                
+
                 }
 
-                else if (opcao == 2) 
+                else if (opcao == 2)
                 {
                     float total_2 = preco - (preco * 0.1f);
                     Console.WriteLine($"À vista e em dinheiro, o valor total é de R${total_2} \n\n\n");
-                
+
                 }
 
                 else if (opcao == 3)
                 {
                     Console.WriteLine($"À vista e em dinheiro, o valor total é de R${preco}\n\n");
-                
+
                 }
 
                 else if (opcao == 4)
@@ -375,7 +495,7 @@ namespace EXERCÍCIOS
                 {
                     break;
                 }
-                                
+
                 Console.WriteLine("Deseja realizar uma nova operação?");
                 Console.WriteLine("Digite 's' para sair ou qualquer tecla para continuar:");
                 string fim = Console.ReadLine().ToLower();
@@ -427,7 +547,7 @@ namespace EXERCÍCIOS
                 Console.WriteLine("Deseja continuar as conversões?");
                 Console.WriteLine("Digite 's' para sair ou qualquer tecla para continuar!");
                 string end = Console.ReadLine().ToLower();
-                
+
 
                 if (end == "s")
                 {
@@ -464,13 +584,13 @@ namespace EXERCÍCIOS
                 }
             }
         }
-                
+
         static (int menor, int soma, int maior, int[] numeros) Numeros()
-        {            
+        {
             int soma = 0, maior = int.MinValue, menor = int.MaxValue;
             int[] numeros = new int[20];
             for (int i = 0; i < 20; i++)
-            
+
             {
                 int num = Eh_numero("Digite um número inteiro e positivo: ");
                 numeros[i] = num;
@@ -489,9 +609,9 @@ namespace EXERCÍCIOS
             return (soma, maior, menor, numeros);
 
         }
-                        
+
         static void Med_Mai()
-        {            
+        {
             (int soma, int maior, int menor, int[] numeros) = Numeros();
             float media = (soma / 20.0f);
             int cont = 0;
@@ -583,8 +703,8 @@ namespace EXERCÍCIOS
         }
 
 
+        
+
     }
-
-
 
 }

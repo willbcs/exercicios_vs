@@ -1,0 +1,6 @@
+C:\Users\Myrath\source\repos\TP04\TP04\bin\Debug\TP04.exe
+C:\Users\Myrath\source\repos\TP04\TP04\bin\Debug\TP04.pdb
+C:\Users\Myrath\source\repos\TP04\TP04\obj\Debug\TP04.csproj.AssemblyReference.cache
+C:\Users\Myrath\source\repos\TP04\TP04\obj\Debug\TP04.csproj.CoreCompileInputs.cache
+C:\Users\Myrath\source\repos\TP04\TP04\obj\Debug\TP04.exe
+C:\Users\Myrath\source\repos\TP04\TP04\obj\Debug\TP04.pdb
